@@ -1,0 +1,495 @@
+@charset "UTF-8";
+:root{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --main-color: rgba(251, 249, 242, 1); ;
+    --first-color: rgba(86, 58, 33, 1); 
+    --second-color: rgba(240, 214, 179, 1); 
+    --terciary-color: rgba(154, 124, 100, 1); 
+    --quaternary-color: rgba(240, 135, 54, 1); 
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body ul{
+    margin: 0px;
+    padding: 0px;
+} 
+#nav a{
+    color: var(--main-color);
+    text-decoration: none;
+   
+}
+#nav a:hover{
+    color: var(--quaternary-color);
+}
+#logo{
+    font-weight: bold;
+    padding: 0%; 
+}
+
+#logo img{
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    width: 100px;
+    margin-right: 50px;
+}
+#header{
+    background-color: rgba(0,0,0,.80);
+    height: 100px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    position: fixed;
+    width: 100%;
+}
+#menu{
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+#agendamento{
+    border: 2px solid none;
+    border-radius: 5px;
+    background-color: var(--quaternary-color);
+}
+#agendamento a:hover{
+    color: var(--main-color);
+}
+#menu a{
+    display: block;
+    padding: .5rem;
+} 
+#btn-mobile{
+    display: none;
+}
+#bg{
+    height: 100vh;
+    background-image: url(Imagens/back.jpeg);
+    width: 100%;
+    background-position: center;
+    background-position-y: 100px;
+}
+#sobre{  
+    height: 100vh;
+    background-color: rgba(0,0,0,.65);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+}
+#info{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 350px;
+    margin-left: 800px;
+    gap: .5rem;
+}
+#sobre h3{
+    text-transform: uppercase;
+    color: rgba(240, 214, 179, 1);
+}
+#sobre p{
+    color: rgba(251, 249, 242, 1);
+    width: 600px;
+    max-height: 500px;
+    text-align: center;
+}
+#sobre a{
+    margin-top: 5px;
+    width: 200px;
+    text-align: center;
+    padding: .5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-color);
+    border: 2px solid none;
+    border-radius: 5px;
+    background-color: var(--quaternary-color);
+}
+#nossso-serviço{ 
+    height: 100vh;
+    background-color: rgba(251, 249, 242, 1);
+}
+#serv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+}
+#info-serv{
+    margin-top: 150px;
+    font-size: 40px;
+    text-transform: uppercase; 
+}
+#aa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#servicos{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+}
+#sinuca{
+    display: block;
+    text-align: center; 
+}
+#sinuca img{
+    width: 150px;
+}
+#sinuca h4{
+    margin-top: 5px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+#poker{
+    display: block;
+    text-align: center; 
+}
+#poker img{
+    width: 150px;
+}
+#poker h4{
+    margin-top: 5px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+#game{
+    display: block;
+    text-align: center; 
+}
+#game img{
+    width: 150px;
+}
+#game h4{
+    margin-top: 5px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+#bar{
+    display: block;
+    text-align: center; 
+}
+#bar img{
+    width: 150px;
+}
+#bar h4{
+    margin-top: 5px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+#servicos2{
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+}
+#cabelo{
+    display: block;
+    text-align: center; 
+}
+#cabelo img{
+    width: 150px;
+}
+#cabelo h4{
+    margin-top: 5px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+#tatto{
+    display: block;
+    text-align: center; 
+}
+#tatto img{
+    width: 150px;
+}
+#tatto h4{
+    margin-top: 5px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+#massagem{
+    display: block;
+    text-align: center; 
+}
+#massagem img{
+    width: 150px;
+}
+#massagem h4{
+    margin-top: 5px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+#podol{
+    display: block;
+    text-align: center; 
+}
+#podol img{
+    width: 150px;
+}
+#podol h4{
+    margin-top: 5px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+#bg-garantia{
+		height: 60vh;
+    background-image: url(imagens/bg-garantia);
+		background-repeat: no-repeat;
+    background-position: center;
+		background-size: 100%;	
+}
+#satis{
+	height: 60vh;
+	background-color: rgba(0,0,0,.80);
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+}
+#garantia{
+	display: flex;
+	align-items: center;
+	gap: 5rem;
+}
+#garantia2{
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	margin-top: 70px;
+	gap: 5rem;
+}
+#corte{
+	margin-top: 50px;
+	color: rgba(240, 249, 242, 1);
+	text-transform: uppercase;
+	border: 2px solid rgba(251, 249, 242, 1);
+	padding: .5rem;
+	width: 300px;
+	text-align: center;
+	margin-left: 150px;
+}
+#vale{
+	margin-top: 50px;
+	color: rgba(240, 249, 242, 1);
+	text-transform: uppercase;
+	border: 2px solid rgba(251, 249, 242, 1);
+	padding: .5rem;
+	width: 300px;
+	text-align: center;
+	margin-left: 150px;
+}
+#presente{
+	margin-top: 50px;
+	color: rgba(240, 249, 242, 1);
+	text-transform: uppercase;
+	border: 2px solid rgba(251, 249, 242, 1);
+	padding: .5rem;
+	width: 300px;
+	text-align: center;
+	margin-left: 150px;
+}
+#pacotes{
+	margin-top: 50px;
+	color: rgba(240, 249, 242, 1);
+	text-transform: uppercase;
+	border: 2px solid rgba(251, 249, 242, 1);
+	padding: .5rem;
+	width: 300px;
+	text-align: center;
+	margin-left: 150px;
+}
+#satisfacao{
+	display: flex;
+	align-items: center;
+}
+#titulo-satis{
+	margin-top: 40px;
+	font-size: 40px;
+	text-transform: uppercase; 
+  color: var(--quaternary-color)
+}
+.info-garantia{
+	color: rgba(251, 249, 242, 1);
+  width: 600px;
+  max-height: 500px;
+  text-align: center;
+	margin-top: 30px;
+}
+#garantias{
+	margin-top: 40px;
+}
+#bg-lazer{
+	height: 80vh;
+	background-color: var(--quaternary-color);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;	
+}
+#lazer{
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+}
+#titulo-lazer{
+	margin-top: 40px;
+	font-size: 40px;
+	text-transform: uppercase; 
+  color: rgba(251, 249, 242, 1);
+}
+#areas-lazer{
+	margin-top: 80px;
+	display: flex;
+	align-items: center;
+	gap: 10rem;
+
+}
+.mesas{
+	display: block;
+  text-align: center; 
+	
+}
+.mesas img{
+	width: 400px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.4);
+}
+.mesas h4{
+	margin-top: 60px;
+	max-width: 400px;
+}
+.mob{
+    display: none;
+}
+@media (max-width: 600px) { 
+    #btn-mobile{
+        display: block;
+    }
+    #menu{
+        display: flex;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background-color: #520000;
+        height: 0px;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #nav.active #menu{
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #menu a{
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0,0,0,.08) ;
+    }
+    #btn-mobile{
+        color: #ffffff;
+        display: flex;
+        padding: .5rem .5rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 1rem;
+    }
+    #hamburguer{
+        display: block;
+        width: 20px;
+        border-top: 2px solid;
+    }
+    #hamburguer::after, #hamburguer::before {
+        content:'';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        position: relative;
+    }
+    #nav.active #hamburguer{
+        border-top-color: transparent;
+    }
+    #nav.active #hamburguer::before{
+      transform: rotate(135deg);
+      transition: .3s;
+    }
+    #nav.active #hamburguer::after{
+        transform: rotate(-135deg);
+        transition: .3s;
+        top: -7px;
+    }
+    #nossso-serviço{ 
+    display: none;  
+    }
+    #bg-garantia{
+        display: none;
+    }
+    #bg-lazer{
+        display: none;
+    }
+    #sobre{  
+        background-color: rgba(0,0,0,.65);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    #info{
+        font-size: 1rem;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+    #sobre h3{
+        text-transform: uppercase;
+        color: rgba(240, 214, 179, 1);
+    }
+    #sobre p{
+        color: rgba(251, 249, 242, 1);
+        max-width: 400px;
+        height: auto;
+        text-align: center;
+        
+    }
+    #sobre a{
+        margin-top: 5px;
+        width: 200px;
+        text-align: center;
+        padding: .5rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--main-color);
+        border: 2px solid none;
+        border-radius: 5px;
+        background-color: var(--quaternary-color);
+    }
+    .desk{
+    display: none;
+    }
+    .mob{
+        display: block;
+    }
+}

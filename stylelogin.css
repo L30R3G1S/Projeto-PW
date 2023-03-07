@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+:root{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --main-color: rgba(251, 249, 242, 1); ;
+    --first-color: rgba(86, 58, 33, 1); 
+    --second-color: rgba(240, 214, 179, 1); 
+    --terciary-color: rgba(154, 124, 100, 1); 
+    --quaternary-color: rgba(240, 135, 54, 1); 
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-image: url(Imagens/back.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#logo{
+    font-weight: bold;
+    padding: 0%; 
+}
+
+#logo img{
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    width: 100px;
+    
+}
+#header{
+    background-color: rgba(0,0,0,.80);
+    height: 100px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    position: fixed;
+    width: 100%;
+}
+.opacity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0,.65);
+}
+.container {
+  background-color: whitesmoke;
+  padding: 6px;
+  width: 350px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 darkgrey;
+}
+
+form {
+  position: absolute;
+  margin-top: 80px;
+  transition: .5s;
+  width: 300px;
+  height: 400px;
+}
+
+.buttonsForm {
+  margin-top: 40px;
+  position: relative;
+  border-radius: 30px;
+  box-shadow: 0 0 7px 0 rgba(240, 135, 54, 1)
+}
+
+.buttonsForm button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  position: relative;
+  padding: 10px 29px;
+}
+
+.btnColor {
+  position: absolute;
+  width: 108px;
+  height: 100%;
+  background: linear-gradient(to right, #f12711, #f5af19);
+  border-radius: 30px;
+  transition: .3s;
+}
+
+input[type="text"], input[type="password"] {
+  border: none;
+  margin-top: 40px;
+  border-radius: 60px;
+  padding: 8px 0 8px 35px;
+  outline: none;
+  width: 100%;
+}
+
+button[type="submit"] {
+  background: rgba(240, 135, 54, 1);
+  color: white;
+  border-radius: 30px;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px 0 8px 15px;
+  font-size: 15px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.divCheck {
+  margin: 10px 0 0 5px;
+  width: 80%;
+  font-size: 13px;
+}
+
+#signin {
+  left: 25px;
+}
+
+#signup {
+  left: 450px;
+}
+
+i {
+  position: absolute;
+  left: 0;
+  padding: 10px 10px;
+}
+
+.iEmail {
+  top: 40px;
+}
+
+.iPassword {
+  top: 114px;
+}
+
+.iPassword2 {
+  top: 190px;
+}
+@media (max-width: 600px) { 
+  #btn-mobile{
+      display: block;
+  }
+  #menu{
+      display: flex;
+      position: absolute;
+      width: 100%;
+      top: 70px;
+      right: 0px;
+      background-color: #520000;
+      height: 0px;
+      transition: .6s;
+      z-index: 1000;
+      visibility: hidden;
+      overflow-y: hidden;
+  }
+  #nav.active #menu{
+      height: calc(100vh - 70px);
+      visibility: visible;
+      overflow-y: auto;
+  }
+  #menu a{
+      padding: 1rem 0;
+      margin: 0 1rem;
+      border-bottom: 2px solid rgba(0,0,0,.08) ;
+  }
+  #btn-mobile{
+      color: #ffffff;
+      display: flex;
+      padding: .5rem .5rem;
+      font-size: 1rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      gap: 1rem;
+  }
+  #hamburguer{
+      display: block;
+      width: 20px;
+      border-top: 2px solid;
+  }
+  #hamburguer::after, #hamburguer::before {
+      content:'';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: currentColor;
+      margin-top: 5px;
+      position: relative;
+  }
+  #nav.active #hamburguer{
+      border-top-color: transparent;
+  }
+  #nav.active #hamburguer::before{
+    transform: rotate(135deg);
+    transition: .3s;
+  }
+  #nav.active #hamburguer::after{
+      transform: rotate(-135deg);
+      transition: .3s;
+      top: -7px;
+  }
+}
+body {
+  background-image: none;
+  background-color: black;
+}
